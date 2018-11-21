@@ -1,5 +1,5 @@
 #점프투파이썬 292쪽 문자열압축하기 문제
-enter = input("문자열을 입력 : ")
+enter = input("문자열 입력하세요 ")
 a = ''
 c=0
 for i in enter:
