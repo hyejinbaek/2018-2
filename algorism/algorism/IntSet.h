@@ -7,7 +7,7 @@ typedef struct {
 	int *set;
 } IntSet;
 
-int Intitialize(IntSet *s, int max);
+int Initialize(IntSet *s, int max);
 
 int IsMember(const IntSet *s, int n);
 
@@ -29,7 +29,7 @@ IntSet *Intersection(IntSet *s1, const IntSet *s2, const IntSet *s3);
 
 IntSet *Difference(IntSet *s1, const IntSet *s2, const IntSet *s3);
 
-void Print(const IntSet *s);
+void PrintLn(const IntSet *s);
 
 void Terminate(IntSet *s);
 #endif
