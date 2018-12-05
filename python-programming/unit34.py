@@ -7,4 +7,9 @@ df = pd.merge(alco2009.reset_index(), population.reset_index()).set_index("State
 print(df.head())
 print(population.head())
 
+import pandas as pd
+import numpy 
 
+
+population = pd.read_csv("population.csv", index_col="State")
+population.head()
