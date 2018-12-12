@@ -4,9 +4,10 @@ import sklearn.linear_model as lm
 
 sap = pd.read_csv("sapXXI.csv").set_index("Date")
 sap.index = pd.to_datetime(sap.index)
+
 sap_linear = sap.ix[sap.index > pd.to_datetime('2009-01-01')]
 olm = lm.LinearRegression()
-x = numpy.array([x.toordinal() for x in sap_linear.index])[:
+x = numpy.array([x.toordinal() for x in sap_linear.index])[:,
     numpy.newaxis]
 y = sap_linear['Close']
 olm.fit(x,y)
